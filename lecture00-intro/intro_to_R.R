@@ -17,11 +17,17 @@ install.packages('tidyverse')
 # load a package for the work
 library(tidyverse)
 
+## Explicit solution to conflicts
+conflicted::conflict_prefer("filter", "dplyr", "stats")
+conflicted::conflict_prefer("lag", "dplyr", "stats")
+
+
 
 # There are built-in data:
 # mpg is a dataset for cars with different characteristics:
 mpg
-
+df <- mpg
+# mpg -> df
 
 # It is easy to create a plot to compare:
 # engine size (displ) vs. fuel efficiency (hwy)

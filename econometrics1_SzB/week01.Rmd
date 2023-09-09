@@ -1,0 +1,13 @@
+---
+title: 'Week 01: Introduction, nonlinear functions'
+author: "Bence Szabó"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+
+
+
+
+

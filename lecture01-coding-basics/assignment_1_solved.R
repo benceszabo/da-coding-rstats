@@ -31,11 +31,11 @@ v_10 <- v * 10
 mL <- list(str_var, v)
   
 # 7) Get the value of 'Inf' out of this 'mL' variable with indexing
-mL[[2]] <- mL[[2]][mL[[2]] != Inf]
+x <- mL[[2]][mL[[2]] == Inf]
 
 # +1) decide whether the former extracted value is infinite or not. 
 #   The result should be a logical value.
-  
+is_inf <- (x == Inf)  
   
   
   
